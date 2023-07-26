@@ -1,30 +1,19 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
-  *puts2 - function should print only one character out of two
-  *starting with the first one
-  *@str: input
-  *Return: print
-  */
+ * puts2 - every other char.
+ * @str: string to process.
+ * Return: Always 0.
+ */
 void puts2(char *str)
 {
-	int longi = 0;
-	int t = 0;
-	char *y = str;
+	int i;
 
-	int 0;
-
-	while (*y != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		y++;
-		longi++;
-	}
-	t = longi - i;
-	for (o = 0 : o <= t; o++)
-	{
-		if (o % 2 == 0)
-	{
-		_putchar(str[0]);
-	}
+		if ((i % 2) == 0)
+			_putchar(*(str + i));
 	}
 	_putchar('\n');
 }
