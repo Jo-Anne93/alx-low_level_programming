@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 
 /**
   *factorial - returns the factorial of a numbser
@@ -14,4 +14,3 @@ int factorial(int n)
 		return (1);
 	return (n * factorial(n - 1));
 }
-  
