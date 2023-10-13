@@ -3,7 +3,7 @@
 #include <stdarg.h>
 
 /**
- * print_string - Prints strings, followed by a new line.
+ * print_strings - Prints strings, followed by a new line.
  * @separator: The string to be pointed between strings.
  * @n: The number of strings passed to the function.
  * @...: A variable number of strings to be printed.
@@ -29,9 +29,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", str);
 
 		if (index != (n - 1) && separator != NULL)
-		{
-			printf("%s%s", str, separator);
-		}
+			printf("%s", separator);
 	}
 
 	printf("\n");
