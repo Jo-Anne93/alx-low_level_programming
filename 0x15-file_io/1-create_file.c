@@ -2,8 +2,8 @@
 
 /**
  * create_file - prog creates a file
- * @filename: filname.
- * @text_content: content writed in the file.
+ * @filename: creates filename.
+ * @text_content: content written in the file.
  *
  * Return: 1 if it success. -1 if it fails.
  */
